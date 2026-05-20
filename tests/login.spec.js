@@ -121,7 +121,7 @@ test('Complete Checkout Flow', async ({ page }) => {
 test('Invalid Login Test', async ({ page }) => {
 
   // open login page again
-  await page.goto('https://www.saucedemo.com');
+  await page.goto(process.env.BASE_URL);
 
   // login page object
   const loginPage = new LoginPage(page);
